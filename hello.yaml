@@ -1,0 +1,24 @@
+"apple" : "i am a red fruit"
+
+1 : "this is rohit roll number"
+
+---
+#list
+
+- apple
+- banana
+- mango 
+--- 
+cities:
+ - new delhi
+ - mumbai
+ - surat
+
+----
+cities: [new delhi, mumbai, surat]
+
+---
+
+{mango: "yellow fruit", age: 56}
+
+...

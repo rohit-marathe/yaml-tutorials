@@ -1,0 +1,53 @@
+#string variables
+myself: Rohit Marathe 
+fruit: "apple"
+job: "devops engineer"
+
+bio: |
+Rohit Marathe. is 
+completing the devops  
+
+#write a single a lines in multiple lines
+
+message: >
+this all
+be the
+considered as a one single line
+
+#this is same as this
+
+message: !!str this all be the considered as a one single line
+
+number: 999
+marks: 97.4%
+booleanValue: !!bol no #  you can use -n, N, false , False , FALSE
+# same for true > yes, y, Y 
+
+
+#specify the types
+
+zero: !!int 0
+positiveNumber: !!int 45
+negativeNumber: !!int -45
+binaryNumber: !!int 0b1100
+octalNumber: !!int 07979
+hexa: !!0x45
+commaValues: !!int 540_000 #  540,0000 
+exponetial numbers: 6.023E56
+
+#floating type number
+
+marks: !!float 55.89  
+infinite: !!float .inf
+not a num: .nan 
+
+#null
+
+surname: !!null Null # you can also use null , NULL ~
+~: this is a null key
+
+#date and time
+
+date: !!timestamp 2022-07-03
+india time: 2022-12-15T02:15:43.10 +5:30
+no time zone: 2022-12-15T02:15:43.10 

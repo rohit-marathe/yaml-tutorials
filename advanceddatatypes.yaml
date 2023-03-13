@@ -1,0 +1,84 @@
+student: !!seq
+- marks
+- name 
+- roll_no 
+
+
+#like this
+
+cities: [new delhi, mumbai, surat]
+
+#some time the key of the seq will be empty
+#sparse seq
+
+sparse seq: 
+
+ - hey
+ - how
+ -
+ - null
+ - sup
+
+
+
+ #nested sequence 
+
+-
+  - mango
+  - apple
+  - banana
+-
+  - marks
+  - roll_no
+  - date
+
+# key: key value pair is called as a maps
+!!map
+
+#nested mapping: map within an map
+
+name: Rohit Marathe
+role:
+  job: devops engineer
+  age: 21 
+
+
+#same as 
+name: Rohit Marathe
+role: {job: devops engineer, age: 21} 
+
+
+#pairs:  keys may have duplicate values
+# !!pairs
+
+pair example: !!pairs
+
+ - job: student
+ - job: devops engineer
+
+
+#same as this 
+
+pair example: !!pairs [job: student, job: devops engineer] 
+
+ #this will be an array of hashtables
+
+ #!!set will allow you to have unique values
+
+ names: !!set
+ ? Rohit
+ ? Raviraj
+ ? Premraj 
+
+#dictonary !!omap --  if you want to represent requence as the value
+
+people: !!omap
+  - Rohit: 
+      name: Rohit Marathe
+      age: 21
+      height: 6
+      
+  - Rahul
+      name: Rahul Marathe
+      age: 21
+      height: 6

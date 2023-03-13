@@ -1,0 +1,15 @@
+{
+    "school": [
+        {
+            "name": "mit",
+            "principal": "someone"
+            "student": [
+                {
+                    "rno": 12,
+                    "name": "Rohit Marathe",
+                    "makrs": 68 
+                } 
+            ]
+        }
+    ]
+}
